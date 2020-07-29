@@ -1,0 +1,63 @@
+body{
+    background-image: url(../img/software-developer.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+}
+
+.abacate {
+    padding-top: 200px;
+    border-radius: 5px;
+}
+
+.box1 {
+    width: 340px;
+    height: 125px;
+    background: #fff;
+    background-color: #000000c2;
+    text-align: center;
+    border-radius: 5px;
+    font-family: "Quicksand", sans-serif;
+    color: #e1aa12;
+}
+
+span {
+    margin-top: 5px;
+    display: block;
+    padding: .25rem 1.5rem;
+    font-weight: 600;
+}
+
+.div_linha {
+    height: 0;
+    margin: .5rem 18px;
+    overflow: hidden;
+    border-top: 1px solid #0000007a;
+}
+
+.bt_voltar {
+    vertical-align: middle;
+    border-style: none;
+    width: 13px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #e1aa12;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-item-text {
+    color: #e1aa12;
+}

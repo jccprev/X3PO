@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;428;500;600;700&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="emp_style.css">
+
+    <title>Cadastro -2</title>
+</head>
+<body>
+
+  <header class="header-absolute">
+    <div class="container-fluid nav_jccprev">
+        <div class="row">
+            <div class="offset-sm-2">
+              <a href="../login.html" class="btn">
+                <h1 class="Jccprev">Jccprev</h1>
+              </a>
+            </div>
+        </div>
+    </div>
+  </header>
+  <div class="d-flex justify-content-center align-items-sm-center top_e">
+    <h1 class="cadastro_e" >Empresa</h1>
+  </div>
+
+    <div class="container-fluid form-group div_linha1" >
+      <br>
+      <form action="/novo_cliente_empresa" method="POST">   
+
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="nome_user">Nome</label>
+            <input type="text" class="form-control" id="nome_user" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="sobrenome_user">Sobrenome</label>
+            <input type="text" class="form-control" id="sobrenome_user">
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="username_empresa">Username</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="username_empresa">@</span>
+              </div>
+              <input type="text" class="form-control" id="username_empresa"  aria-describedby="inputGroupPrepend2" autocomplete="off"  name="username_empresa" required>
+            </div>
+          </div>
+        </div>
+                
+
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="razao_social">Nome da Empresa</label>
+            <input type="text" class="form-control" id="razao_social" name="razao_social" autocomplete="off" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="cidade_empresa">Cidade</label>
+            <input type="text" class="form-control" id="cidade_empresa">
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="estado_empresa">Estado</label>
+            <select class="form-control" id="estado_empresa">
+              <option selected disabled value="">Escolha ...</option>
+              <option value="São Paulo - SP">São Paulo - SP</option>
+              <option value="Rio de Janeiro - RJ">Rio de Janeiro - RJ</option>
+              <option value="Acre - AC">Acre - AC</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="cep_empresa">CEP</label>
+            <input type="text" class="form-control" id="cep_empresa" placeholder="00000-000">
+          </div>
+        </div>
+      
+        
+        <div class="form-row">
+          <div class="col-2 mb-3">
+            <label for="responsavel_contato">Telefone Responsavel</label>
+            <input type="text" class="form-control" id="responsavel_contato" name="responsavel_contato" placeholder="(00) 0 0000-0000" required>
+          </div> 
+          <div class="col-2 mb-3">
+            <label for="telefone_empresa">Telefone comercial</label>
+            <input type="text" class="form-control" id="telefone_empresa" name="telefone_empresa" placeholder="(00) 0000-0000" required>
+          </div> 
+          <div class="col-sm-auto mb-3">
+            <label for="telefone_ramal_empresa">Ramal <op>opcional:</op> </label>
+            <input type="text" class="form-control" id="telefone_ramal_empresa">
+          </div>                
+          <div class="col-2 mb-3">
+            <label for="cnpj">CNPJ</label>
+            <input type="text" class="form-control" id="cnpj" name="cnpj" autocomplete="off" placeholder="00.000.000/0000-00" required>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="col-5 mb-3">
+            <label for="email_empresa">E-mail comercial</label>
+            <input type="email" class="form-control" id="email_empresa" name="email_empresa" placeholder="nome_de@exemplo.com.br" required>
+          </div>
+          <div class="col-5 mb-3">
+            <label for="email_empresa_2">E-mail <op>opcional:</op> </label>
+            <input type="email" class="form-control" id="email_empresa_2" placeholder="nome_de@exemplo.com.br">
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="col-3 mb-5">
+            <label for="porte_empresa">Porte da empresa</label>
+            <select class="form-control">
+              <option selected disabled value="0">Selecione ...</option>
+              <option value="1">1</option>
+              <option value="2-4">2-4</option>
+              <option value="5-9">5-9</option>
+              <option value="10-24">10-24</option>
+              <option value="25-49">25-49</option>
+              <option value="50-249">50-249</option>
+              <option value="250-999">250-999</option>
+              <option value="+1000">+1000</option>
+            </select>
+          </div>
+          <div class="col-3 mb-5">
+            <label for="ramo_de_atuacao">Ramo da empresa</label>
+            <select class="form-control" id="ramo_de_atuacao" name="ramo_de_atuacao" required>
+              <option selected disabled value="" >Selecione um ...</option>
+              <option value="Industriais">Industrial</option>
+              <option value="Comercial">Comercial</option>
+              <option value="Prestação de serviços">Prestação de serviços</option>
+              <!-- +info: https://www.sebrae.com.br/sites/PortalSebrae/artigos/ramos-de-atividades,8ef89e665b182410VgnVCM100000b272010aRCRD -->
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-inline mb-5">
+          <label for="senha_empresa">Senha</label>
+          <input type="password" id="senha_empresa" class="form-control mx-sm-3" aria-describedby="passwordHelpInline" name="senha_empresa" pattern=".{8,}" required>
+          <small id="senha_empresa" class="text-muted">
+            A senha deve conter 8-20 caracteres.
+          </small>
+        </div>
+
+        <div class="div_linha2"></div>
+        
+        <div class="form-row align-items-center justify-content-center">
+          <!-- Button trigger modal -->
+          <div class="bt_lt">
+          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">
+            Ler termos
+            </button>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Você aceita nossos termos.
+            </label>
+          </div>
+        </div>
+        
+        <div class="d-flex justify-content-center div_bt">
+          <button class="btn btn-warning bt_criar" type="submit">Criar</button>
+          <button class="btn btn-secondary bt_reset" type="reset" >Limpar</button>
+          <a href="../opcao_cadastro/opcao_cadastro.html" class="btn btn-danger active" aria-pressed="true" role="button">Cancelar</a>
+        </div>
+
+      </form>              
+    </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Nossos termos</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                 Segurança da informação é a proteção de dados de propriedade das organizações contra ameaças diversas. 
+                 Trata-se de um esforço pautado por ações que objetivam mitigar riscos e garantir a continuidade das operações. 
+                 Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, 
+                 consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a 
+                 sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal),
+                 de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A primeira linha de Lorem Ipsum, 
+                 "Lorem Ipsum dolor sit amet..." vem de uma linha na seção 1.10.32.
+                <br>
+                <br>
+                 Está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum".
+                <a href="https://br.lipsum.com/" target="_blank">...Ler mais.</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Sair</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br> 
+        <br>
+
+        <footer class="footer">
+          <div class="container-fluid d-flex pt-3 justify-content-center align-items-center">
+            <h3 class="Jccprev">Jccprev</h3>
+            <div class="divisoria"></div>
+            <h1 class="copyright">Copyright 2020 - Todos Direitos Reservados.</h1>
+          </div>
+        </footer>
+                
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+
+      $("#cep_empresa").mask("00000-000");
+
+      $("#responsavel_contato").mask("(00) 0 0000-0000");
+
+      $("#telefone_empresa").mask("(00) 0000-0000");
+
+      $("#cnpj").mask("00.000.000/0000-00");
+
+    </script>
+
+  </body>
+</html>

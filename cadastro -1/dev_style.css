@@ -1,0 +1,112 @@
+body {
+    background-color: #dddddd;
+  }
+
+  .header-absolute {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .nav_jccprev {
+    background-color: black;
+  }
+
+  .Jccprev {
+    font-size: 34px;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin: 0;
+  }
+
+  .top_d { 
+    /* background-image: url(https://www.remessaonline.com.br/blog/wp-content/uploads/2020/01/O-que-%C3%A9-empresa-individual-EI_1028568955.jpg); */
+    /* background-position: center center; */
+    background-image: url(../img/dev.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: -9px;
+    height: 500px;
+  }
+
+  .cadastro_d { 
+    color: #e1aa12;
+    font-weight: 700;
+    font-size: 95px;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+  }
+
+  .div_linha1 { 
+    background-color: #dddddd;
+    border-top-color: #e1aa12;
+    border-top-width: 4px;
+    border-top-style: solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  /* ----------- */
+
+  .espaco_input1 { 
+    margin-right: 35px;
+  }
+
+  .espaco_input2 { 
+    margin-left: 35px;
+  }
+
+  /* ----------- */
+  .div_linha2 { 
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-color: #e1aa12;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+
+  .bt_lt {
+    margin-right: 10px;
+  }
+  
+  .div_bt { 
+    margin: 16px;
+  }        
+  
+  .bt_criar { 
+    margin-right: 35px;
+  }
+  
+  .bt_reset { 
+    margin-right: 35px;
+  }
+
+  .copyright { 
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .footer { 
+    background-color: black;
+    height: 85px;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  .divisoria { 
+    height: 60px;
+    border-left-color: #e1aa12;
+    border-left-width: 1px;
+    border-left-style: solid;
+    margin-left: 20px;
+    margin-right: 20px;
+  }          

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;428;500;600;700&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="dev_style.css">
+    
+    <title>Cadastro -1</title>
+</head>
+<body>
+
+    <header class="header-absolute">
+        <div class="container-fluid nav_jccprev">
+            <div class="row">
+                <div class="offset-sm-2">
+                  <a href="../login.html" class="btn">
+                    <h1 class="Jccprev">Jccprev</h1>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="d-flex justify-content-center align-items-sm-center top_d">
+      <h1 class="cadastro_d" >Desenvolvedor</h1>
+    </div>
+
+    <div class="container-fluid form-group div_linha1">
+        <br>
+        <form action="/novo_desenvolvedor" method="POST">
+
+          <div class="form-row">
+            <div class="col-md-4 mb-4">
+              <label for="nome_desenvolvedor">Nome</label>
+              <input type="text" class="form-control" id="nome_desenvolvedor" name="nome_desenvolvedor" required>
+            </div>
+            <div class="col-md-4 mb-4">
+              <label for="sobrenome_desenvolvedor">Sobrenome</label>
+              <input type="text" class="form-control" id="sobrenome_desenvolvedor" name="sobrenome_desenvolvedor" required>
+            </div>
+            <div class="col-md-4 mb-4">
+              <label for="username_desenvolvedor">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="username_desenvolvedor">@</span>
+                </div>
+                <input type="text" class="form-control" id="username_desenvolvedor"  aria-describedby="inputGroupPrepend2" autocomplete="off"  name="username_desenvolvedor" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-2 mb-4 espaco_input1">
+              <label for="data_de_nascimento_desenvolvedor">Data de nascimento</label>
+              <input type="date" class="form-control" id="data_de_nascimento_desenvolvedor" name="data_de_nascimento_desenvolvedor" autocomplete="off" required>
+            </div>
+            <div class="col-2 mb-4">
+              <label for="celular_desenvolvedor">Celular</label>
+              <input type="text" class="form-control" id="celular_desenvolvedor" name="celular_desenvolvedor" placeholder="(DD) 0 0000-0000" required>
+            </div> 
+            <div class="col-2 mb-4">
+              <label for="telefone_desenvolvedor">Telefone</label>
+              <input type="tel" class="form-control" id="telefone_desenvolvedor" name="telefone_desenvolvedor" placeholder="(DD) 0000-0000" required>
+            </div>                
+            <div class="col-2 mb-4 espaco_input2">
+              <label for="cpf_desenvolvedor">CPF</label>
+              <input type="text" class="form-control" id="cpf_desenvolvedor" name="cpf_desenvolvedor" autocomplete="off" placeholder="000.000.000-00" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="col-5 mb-4">
+              <label for="email_desenvolvedor">E-mail</label>
+              <input type="email" class="form-control" id="email_desenvolvedor" name="email_desenvolvedor" placeholder="nome_de@exemplo.com.br" required>
+            </div>
+            <div class="col-2 mb-4 espaco_input2">
+              <label for="dev_cidade">Cidade</label>
+              <input type="text" class="form-control" name="dev_cidade" id="dev_cidade">
+            </div>
+            <div class="col-3 mb-4">
+              <label for="dev_estado">Estado</label>
+              <select name="dev_estado" class="form-control" id="dev_estado">
+                <option selected disabled value="">Selecione um...</option>
+                <option value="São Paulo - SP">São Paulo - SP</option>
+                <option value="Rio de Janeiro - RJ">Rio de Janeiro - RJ</option>
+                <option value="Acre - AC">Acre - AC</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="col-4 mb-4">
+              <label for="especializacao">Especialização</label>
+              <input type="text" class="form-control" id="especializacao" name="especializacao" required>
+            </div>
+            <div class="col-5 mb-4">
+              <label for="">Graduação</label>
+              <select class="form-control" name="dev_graduacao" id="dev_graduacao">
+                <option selected disabled value="">Graduação em ...</option>
+                <option value="Sistemas de Informação">Sistemas de Informação</option>
+                <option value="Ciência da Computação">Ciência da Computação</option>
+                <option value="Engenharia de Computação">Engenharia de Computação</option>
+                <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                <option value="Banco de Dados">Banco de Dados</option>
+                <option value="Defesa Cibernética">Defesa Cibernética</option>
+                <option value="Gestão da Tecnologia da Informação">Gestão da Tecnologia da Informação</option>
+                <option value="Redes de Computadores">Redes de Computadores</option>
+              </select>
+            </div>
+          </div>
+            
+          <div class="form-row">
+            <div class="col-3 mb-4">
+              <label for="ano_graduacao">Mês/Ano da Graduação</label>
+              <input type="month" class="form-control" name="ano_graduacao" id="ano_graduacao">
+            </div>
+            <div class="col-5 mb-4 espaco_input2">
+              <label for="facul_graduacao">Faculdade da Graduação</label>
+              <select class="form-control" name="facul_graduacao" id="facul_graduacao">
+                <option selected disabled value="">Qual foi a Faculdade?</option>
+                <option value="Faculdade Impacta de Tecnologia">Faculdade Impacta de Tecnologia</option>
+                <option value="Mackenzie">Mackenzie</option>
+                <option value="FIAP">FIAP</option>
+                <option value="Fatec">Fatec</option>
+                <option value="Universidade São Judas Tadeu">Universidade São Judas Tadeu</option>
+              </select>
+            </div>
+          </div>
+            
+          <!-- ----------- -->
+
+          <br>
+          <div class="form-inline mb-5">
+              <label for="senha_desenvolvedor">Senha</label>
+              <input type="password" id="senha_desenvolvedor" class="form-control mx-sm-3" aria-describedby="passwordHelpInline" name="senha_desenvolvedor" required>
+              <small id="senha_desenvolvedor" class="text-muted">
+                A senha deve conter 8-20 caracteres.
+              </small>
+          </div>
+  
+          <div class="div_linha2"></div>
+      
+          <div class="form-row align-items-center justify-content-center">
+              <!-- Button trigger modal -->
+              <div class="bt_lt">
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">
+                Ler termos
+                </button>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Você aceita nossos termos.
+                </label>
+              </div>
+          </div>
+          
+          <div class="d-flex justify-content-center div_bt">
+              <button class="btn btn-warning bt_criar" type="submit">Criar</button>
+              <button class="btn btn-secondary bt_reset" type="reset" >Limpar</button>
+              <a href="../opcao_cadastro/opcao_cadastro.html" class="btn btn-danger active" aria-pressed="true" role="button">Cancelar</a>
+          </div>
+    
+        </form>
+
+        <br>
+        <br>
+        
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Nossos termos</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+               Segurança da informação é a proteção de dados de propriedade das organizações contra ameaças diversas. 
+               Trata-se de um esforço pautado por ações que objetivam mitigar riscos e garantir a continuidade das operações. 
+               Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, 
+               consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a 
+               sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal),
+               de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A primeira linha de Lorem Ipsum, 
+               "Lorem Ipsum dolor sit amet..." vem de uma linha na seção 1.10.32.
+               <br>
+               <br>
+               Está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum".
+               <a href="https://br.lipsum.com/" target="_blank">...Ler mais.</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+    <footer class="footer">
+        <div class="container-fluid d-flex pt-3 justify-content-center align-items-center">
+          <h3 class="Jccprev">Jccprev</h3>
+          <div class="divisoria"></div>
+          <h1 class="copyright">Copyright 2020 - Todos Direitos Reservados.</h1>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+
+      $("#celular_desenvolvedor").mask("(00) 0 0000-0000");
+
+      $("#telefone_desenvolvedor").mask("(00) 0000-0000");
+
+      $("#cpf_desenvolvedor").mask("000.000.000-00");
+
+    </script>
+
+  </body>
+</html>
